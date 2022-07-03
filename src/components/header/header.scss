@@ -1,0 +1,76 @@
+@import "../../styles/base/mixinResponse";
+
+.container-main-opacity {
+    --bg-opacity: 1;
+    background-color: rgb(19 20 25 / var(--tw-bg-opacity));
+    height: 5rem;
+}
+
+.container-main-not-opacity {
+    height: 6rem
+}
+
+.container-main {
+    --text-opacity: 1;
+    align-items: center;
+    color: rgb(255 255 255 / var(--text-opacity));
+    display: flex;
+    position: fixed;
+    width: 100%;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+    top: 0;
+
+    .container-sub-main {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include desktop {
+            .nav-desktop {
+                display: block;
+            }
+
+            .social {
+                display: block;
+            }
+
+            .nav-mobile {
+                display: none;
+            }
+        }
+
+        @include tablet {
+            .nav-desktop {
+                display: none;
+            }
+
+            .social {
+                display: none;
+            }
+
+            .nav-mobile {
+                display: block;
+            }
+
+        }
+
+        @include mobile {
+            .nav-desktop {
+                display: none;
+            }
+
+            .social {
+                display: none;
+            }
+
+            .nav-mobile {
+                display: block;
+            }
+        }
+    }
+}
