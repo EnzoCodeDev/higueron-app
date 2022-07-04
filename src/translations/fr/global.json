@@ -6,5 +6,8 @@
         "english": "Anglais",
         "Portuguese-from-Brazil": "Portugais du (Brésil)",
         "frances": "Français"
+    },
+    "footer": {
+        "all-reserved": "Todos los derechos reservados."
     }
 }

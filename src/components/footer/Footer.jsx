@@ -1,10 +1,11 @@
 import React from "react";
-// import social data
+import moment from "moment";
 import { social } from "../../data";
-// import logo
 import Logo from "../../assets/img/logo.svg";
 import "./footer.scss";
+import { useTranslation } from "react-i18next";
 export const Footer = () => {
+  const { t } = useTranslation("global");
   return (
     <footer className="container-main-footer">
       <div className="container-custom container-sub-main-footer">
@@ -23,7 +24,8 @@ export const Footer = () => {
             <img src={Logo} alt="" />
           </div>
           <p className="parrafo">
-            &copy; 2022 Cristian Mihai. All rights reserved.
+            &copy; {`${moment().format("YYYY")} `}Sergio Cano.{" "}
+            {t("footer.all-reserved")}
           </p>
         </div>
       </div>

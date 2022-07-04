@@ -72,6 +72,7 @@ export const NavBarMobile = () => {
                 duration={500}
                 offset={-70}
                 className="link-redirect"
+                onClick={() => setIsOpen(false)} 
               >
                 {item.name}
               </Link>

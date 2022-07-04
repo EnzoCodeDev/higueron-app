@@ -2,8 +2,7 @@
     position: relative;
 
     .container-nav-movile {
-        --text-opacity: 1;
-        color: rgb(255 255 255 / var(--text-opacity));
+        color: rgb(255 255 255);
         cursor: pointer;
 
         .menu-icon {
@@ -13,8 +12,7 @@
     }
 
     .motion-div {
-        --bg-opacity: 1;
-        background-color: rgb(172 107 52 / var(--bg-opacity));
+        background-color: rgb(172 107 52);
         border-radius: 9999px;
         right: 0px;
         position: fixed;
