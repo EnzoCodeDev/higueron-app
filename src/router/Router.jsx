@@ -6,6 +6,7 @@ import { Home } from "../components/home/Home";
 import "../styles/styles.scss";
 import "./router.scss";
 import { Translate } from "../view/translate/Translate";
+import { Myths } from "../view/myths/Myths";
 export const Router = () => {
   return (
     <BrowserRouter>
@@ -17,6 +18,7 @@ export const Router = () => {
           <Routes>
             <Route path="home" exact element={<Home />} />
             <Route path="translate" exact element={<Translate />} />
+            <Route path="myths" exact element={<Myths />} />
           </Routes>
         </div>
       </div>

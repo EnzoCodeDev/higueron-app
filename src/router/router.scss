@@ -1,6 +1,19 @@
+@import "../styles/base/mixinResponse";
+
 .container-root-main {
     background: white;
-    min-height: calc(100vh - 15.2rem);
+
+    @include desktop {
+        min-height: calc(100vh - 15.3rem);
+    }
+
+    @include tablet {
+        min-height: calc(100vh - 19.3rem);
+    }
+
+    @include mobile {
+        min-height: calc(100vh - 19.3rem);
+    }
 
     .container-root-body {
         margin-top: 6rem;
