@@ -4,16 +4,23 @@ import { Footer } from "../components/footer/Footer";
 import { Header } from "../components/header/Header";
 import { Home } from "../components/home/Home";
 import "../styles/styles.scss";
+import "./router.scss";
+import { Translate } from "../view/translate/Translate";
 export const Router = () => {
   return (
     <BrowserRouter>
       <div className="container-root-main">
-        <Header />
-        <Routes>
-          <Route path="home" exact element={<Home />} />
-        </Routes>
-        <Footer />
+        <div className="container-root-header">
+          <Header />
+        </div>
+        <div className="container-root-body">
+          <Routes>
+            <Route path="home" exact element={<Home />} />
+            <Route path="translate" exact element={<Translate />} />
+          </Routes>
+        </div>
       </div>
+      <Footer />
     </BrowserRouter>
   );
 };

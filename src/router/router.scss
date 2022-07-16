@@ -1,4 +1,8 @@
 .container-root-main {
     background: white;
-    position: relative;
+    min-height: calc(100vh - 15.2rem);
+
+    .container-root-body {
+        margin-top: 6rem;
+    }
 }
