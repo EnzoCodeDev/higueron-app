@@ -41,7 +41,7 @@ export const MythsView = () => {
           </div>
           <div className="post-content">
             <h1 class="entry-title">
-              <span>El duende verde</span>{" "}
+              <span>El duende verde que se robo a la duenda(Sandra)</span>{" "}
             </h1>
             <div className="entry">
               <p>
