@@ -41,7 +41,7 @@ export const MythsView = () => {
           </div>
           <div className="post-content">
             <h1 class="entry-title">
-              <span>Orpheus and Eurydice</span>{" "}
+              <span>El duende verde</span>{" "}
             </h1>
             <div className="entry">
               <p>
