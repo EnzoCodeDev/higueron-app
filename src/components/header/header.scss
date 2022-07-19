@@ -2,11 +2,13 @@
 
 .container-main-opacity {
     --bg-opacity: 1;
-    background-color: rgb(19 20 25 / var(--tw-bg-opacity));
+    background-color: rgb(19 20 25 / var(--bg-opacity));
     height: 5rem;
 }
 
 .container-main-not-opacity {
+    --bg-opacity: 1;
+    background-color: rgb(43, 43, 43);
     height: 6rem
 }
 

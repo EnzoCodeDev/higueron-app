@@ -4,8 +4,8 @@ import "./myths.scss";
 export const Myths = () => {
   return (
     <div className="container-myth">
-      <div className="sub-container-myth">
-        <div className="container-card-myth">
+      <section className="sub-container-myth">
+        <article className="container-card-myth">
           <div className="sub-container-card-myth">
             <div className="container-image-myth">
               <img src="https://th.bing.com/th/id/OIP.kpDdsGw5uwcJFOh6en0QHgHaE8?pid=ImgDet&rs=1"></img>
@@ -38,8 +38,8 @@ export const Myths = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="container-card-myth ">
+        </article>
+        <article className="container-card-myth ">
           <div className="sub-container-card-myth active">
             <div className="container-image-myth">
               <img src="https://th.bing.com/th/id/OIP.kpDdsGw5uwcJFOh6en0QHgHaE8?pid=ImgDet&rs=1"></img>
@@ -72,8 +72,8 @@ export const Myths = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </article>
+      </section>
     </div>
   );
 };

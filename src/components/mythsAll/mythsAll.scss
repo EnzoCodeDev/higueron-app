@@ -1,0 +1,42 @@
+#sidebar {
+    box-sizing: border-box;
+    width: 100%;
+
+    .widget_recent_entries {
+        margin-bottom: 2em;
+        padding: 1.5em;
+        background: #fff;
+        border: 1px solid #e5e5e5;
+
+        .widgettitle {
+            font-size: 1.0em;
+            font-weight: bold;
+            font-family: 'Carme', Tahoma, Verdana, Arial;
+            padding: 1em;
+            margin: -1.5em -1.5em 1.5em -1.5em;
+            color: #333;
+            background: #f8f8f8;
+            border-bottom: 1px solid #e5e5e5;
+            line-height: 1.5em;
+
+        }
+
+        ul {
+            list-style: circle;
+            color: #555;
+            line-height: 1.5em;
+
+            li {
+                vertical-align: baseline;
+                display: list-item;
+                margin-left: 20px;
+
+                a {
+                    font-family: tahoma, arial, helvetica;
+                    text-decoration: none;
+                    color: #cc1111;
+                }
+            }
+        }
+    }
+}
