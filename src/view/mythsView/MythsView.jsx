@@ -19,7 +19,7 @@ export const MythsView = () => {
                   >
                     <time
                       className="entry-date published updated"
-                      datetime="2020-07-20T12:19:00+00:00"
+                      dateTime="2020-07-20T12:19:00+00:00"
                     >
                       2020-07-20
                     </time>
@@ -43,7 +43,7 @@ export const MythsView = () => {
               </div>
             </div>
             <div className="post-content">
-              <h1 class="entry-title">
+              <h1 className="entry-title">
                 <span>El duende verde que se robo a la duenda(Sandra)</span>{" "}
               </h1>
               <div className="entry">
@@ -93,7 +93,7 @@ export const MythsView = () => {
                     <img src="https://th.bing.com/th/id/OIP.kpDdsGw5uwcJFOh6en0QHgHaE8?pid=ImgDet&rs=1"></img>
                   </figure>
                 </div>
-                <p class="has-text-align-center">
+                <p className="has-text-align-center">
                   <a href="https://mythsandlegend.com/cerberus/">
                     Read more about the guardian of the underworld Cerberus
                     here!
@@ -108,7 +108,7 @@ export const MythsView = () => {
                   dancing with the Nymphs. In any case, while fleeing or
                   dancing, she was bitten by a snake and died instantly.{" "}
                 </p>
-                <p class="has-text-align-center">
+                <p className="has-text-align-center">
                   <a href="https://mythsandlegend.com/cerberus/">
                     Read more about the guardian of the underworld Cerberus
                     here!
