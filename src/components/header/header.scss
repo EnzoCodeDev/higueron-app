@@ -33,6 +33,22 @@
         margin-left: auto;
         margin-right: auto;
 
+        .wp-block-image {
+
+            .figure-img {
+                margin-left: auto;
+                margin-right: auto;
+                display: table;
+
+                img {
+                    width: 210px;
+                    height: 60px;
+                    max-width: 100%;
+                }
+            }
+
+        }
+
         .icon-container {
             &:hover {
                 cursor: pointer;
@@ -102,6 +118,9 @@
             .nav-desktop {
                 display: none;
             }
+            .wp-block-image {
+                margin: auto;        
+            }
 
             .social {
                 display: none;
@@ -116,6 +135,9 @@
         @include mobile {
             .nav-desktop {
                 display: none;
+            }
+            .wp-block-image {
+                margin: auto;        
             }
 
             .social {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { WiDaySunny, WiMoonAltWaningCrescent4 } from "react-icons/wi";
-import Logo from "../../assets/img/logo.svg";
+import logo from "../../assets/img/logo/logo-higueron.png";
 import { NavBarMobile } from "../navbar-mobile/NavBarMobile";
 import { Navbar } from "../navbar/Navbar";
 import Socials from "../Socials";
@@ -43,9 +43,14 @@ export const Header = () => {
           </label>
         </div>
         {/* logo */}
-        <a href="#">
+        <div className="wp-block-image">
+          <figure className="figure-img">
+            <img src={logo} alt=''/>
+          </figure>
+        </div>
+        {/* <a href="#">
           <img src={Logo} alt="" />
-        </a>
+        </a> */}
         {/* nav */}
         <div className="nav-desktop">
           <Navbar />

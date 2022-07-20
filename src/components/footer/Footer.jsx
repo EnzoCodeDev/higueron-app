@@ -1,7 +1,7 @@
 import React from "react";
 import moment from "moment";
 import { social } from "../../data";
-import Logo from "../../assets/img/logo.svg";
+import logo from "../../assets/img/logo/logo-higueron.png";
 import "./footer.scss";
 import { useTranslation } from "react-i18next";
 export const Footer = () => {
@@ -20,8 +20,10 @@ export const Footer = () => {
               );
             })}
           </div>
-          <div>
-            <img src={Logo} alt="" />
+          <div className="wp-block-image">
+            <figure className="figure-img">
+              <img src={logo} alt="" />
+            </figure>
           </div>
           <p className="parrafo">
             &copy; {`${moment().format("YYYY")} `}Sergio Cano.{" "}
