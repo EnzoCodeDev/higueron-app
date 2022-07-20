@@ -3,13 +3,9 @@
 .container-myth {
     .sub-container-myth {
         .container-card-myth {
-            margin: auto;
-            width: 100%;
-            height: 100%;
             margin-bottom: 30px;
 
             .sub-container-card-myth {
-                border: 1px solid;
 
                 .container-image-myth:after,
                 .container-image-myth:before {
@@ -59,7 +55,6 @@
 
                 .container-info-myth {
                     padding: 20px 30px;
-                    height: auto;
                     width: 60%;
 
                     .sub-container-info-myth {
@@ -133,12 +128,19 @@
 
 @include desktop {
     .container-myth {
+        display: flex;
         padding: 3em 3em;
+
         .sub-container-myth {
+            width: 72%;
+            padding-right: 2em;
+
             .container-card-myth {
+                border: 1px solid #e5e5e5;
+
                 .sub-container-card-myth {
                     margin: auto;
-                    width: 90%;
+                    width: 100%;
                     display: flex;
                     flex-direction: row-reverse;
                     justify-content: space-around;
@@ -152,14 +154,21 @@
 
         }
 
+        .container-aside {
+            width: 28%;
+        }
+
     }
 }
 
 @include tablet {
     .container-myth {
         padding: 2em 2em;
+
         .sub-container-myth {
             .container-card-myth {
+                border: 1px solid #e5e5e5;
+
                 .sub-container-card-myth {
                     display: flex;
                     flex-direction: row-reverse;
@@ -188,11 +197,14 @@
 @include mobile {
     .container-myth {
         padding: 1em 1em;
+
         .sub-container-myth {
             .container-card-myth {
+                border: 1px solid #e5e5e5;
+                margin: auto;
+                margin-bottom: 30px;
+                max-width: 450px;
                 .sub-container-card-myth {
-                    width: 100%;
-
                     .container-image-myth {
                         width: 100%;
                         height: 220px;

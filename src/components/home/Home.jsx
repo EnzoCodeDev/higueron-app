@@ -10,10 +10,11 @@ import Contact from "../Contact";
 import Testimonials from "../Testimonials";
 import BackTopBtn from "../BackTopBtn";
 import "./home.scss";
+import { AnimationPage } from "../animation/AnimationPage";
 
 export const Home = () => {
   return (
-    <React.Fragment>
+    <AnimationPage>
       <Hero />
       <Brands />
       <About />
@@ -23,6 +24,6 @@ export const Home = () => {
       <Testimonials />
       <Contact />
       <BackTopBtn />
-    </React.Fragment>
+    </AnimationPage>
   );
 };

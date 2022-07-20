@@ -1,5 +1,6 @@
 .navbar-movile {
     position: relative;
+    z-index: 1000000;
 
     .container-nav-movile {
         color: rgb(255 255 255);
@@ -63,7 +64,6 @@
             cursor: pointer;
             font-size: 1.25rem;
             line-height: 1.75rem;
-            text-transform: capitalize;
         }
     }
 

@@ -1,12 +1,14 @@
 // navigation
 export const navigation = [
     {
-      name: 'home',
+      name: 'Inicio',
+      redirect: '/home',
       href: 'home',
     },
     {
-      name: 'about',
-      href: 'about',
+      name: 'Mitos y leyendas',
+      redirect: '/myths',
+      href: 'myths',
     },
     {
       name: 'portfolio',

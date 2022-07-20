@@ -17,10 +17,10 @@ export const Router = () => {
         </div>
         <div className="container-root-body">
           <Routes>
-            <Route path="home" exact element={<Home />} />
-            <Route path="translate" exact element={<Translate />} />
-            <Route path="myths" exact element={<Myths />} />
-            <Route path="mythsView" exact element={<MythsView />} />
+              <Route path="home" exact element={<Home />} />
+              <Route path="translate" exact element={<Translate />} />
+              <Route path="myths" exact element={<Myths />} />
+              <Route path="mythsView" exact element={<MythsView />} />
           </Routes>
         </div>
       </div>

@@ -4,8 +4,10 @@ import { navigation } from "./data";
 // import Link
 import { Link } from "react-scroll";
 import "./navbar.scss";
+import { useNavigate } from "react-router-dom";
 
 export const Navbar = () => {
+  let navigate = useNavigate();
   return (
     <nav className="navbar-desktop">
       <ul>
@@ -13,6 +15,7 @@ export const Navbar = () => {
           return (
             <li key={idx}>
               <Link
+                onClick={() => navigate(item.redirect, { remplace: true })}
                 to={item.href}
                 activeClass="active"
                 spy={true}

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 // import icons
 import { XIcon } from "@heroicons/react/outline";
 import { MenuAlt3Icon } from "@heroicons/react/outline";
+import { useNavigate } from "react-router-dom";
 
 // import navigation data
 import { navigation } from "../navbar/data";
@@ -18,6 +19,7 @@ import { Link } from "react-scroll";
 import "./navbar_mobile.scss";
 export const NavBarMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
+  let navigate = useNavigate();
   const circleVariants = {
     hidden: {
       scale: 0,
@@ -67,12 +69,15 @@ export const NavBarMobile = () => {
           return (
             <li key={idx}>
               <Link
+                onClick={() => {
+                  setIsOpen(false);
+                  navigate(item.redirect, { remplace: true });
+                }}
                 to={item.href}
                 smooth={true}
                 duration={500}
                 offset={-70}
                 className="link-redirect"
-                onClick={() => setIsOpen(false)} 
               >
                 {item.name}
               </Link>
