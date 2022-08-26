@@ -71,7 +71,7 @@ export const NavBarMobile = () => {
               <Link
                 onClick={() => {
                   setIsOpen(false);
-                  navigate(item.redirect, { remplace: true });
+                  navigate(item.redirect);
                 }}
                 to={item.href}
                 smooth={true}

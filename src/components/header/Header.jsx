@@ -23,7 +23,7 @@ export const Header = () => {
         bg ? "container-main-opacity " : "container-main-not-opacity "
       } container-main`}
     >
-      <div className="container-sub-main container-custom">
+      <div className="container-sub-main">
         <div className="icon-container">
           <label htmlFor="night-light-checkbox" className="night-light-label">
             <input
@@ -48,9 +48,6 @@ export const Header = () => {
             <img src={logo} alt=''/>
           </figure>
         </div>
-        {/* <a href="#">
-          <img src={Logo} alt="" />
-        </a> */}
         {/* nav */}
         <div className="nav-desktop">
           <Navbar />

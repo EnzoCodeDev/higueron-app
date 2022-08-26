@@ -15,7 +15,7 @@ export const Navbar = () => {
           return (
             <li key={idx}>
               <Link
-                onClick={() => navigate(item.redirect, { remplace: true })}
+                onClick={() => navigate(item.redirect)}
                 to={item.href}
                 activeClass="active"
                 spy={true}

@@ -1,6 +1,6 @@
-@import "../../styles/base/mixinResponse";
+@import "../base/mixinResponse";
 
-.container-mythsView {
+.container-section {
     .content {
         float: none;
 
@@ -84,7 +84,7 @@
 }
 
 @include desktop {
-    .container-mythsView {
+    .container-section {
         padding: 3em 3em;
         display: flex;
 
@@ -108,7 +108,7 @@
 }
 
 @include tablet {
-    .container-mythsView {
+    .container-section {
         padding: 2em 2em;
 
         .content {
@@ -132,7 +132,7 @@
 }
 
 @include mobile {
-    .container-mythsView {
+    .container-section {
         padding: 1em 1em;
 
         .content {

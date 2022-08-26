@@ -2,11 +2,10 @@ import React from "react";
 import { AnimationPage } from "../../components/animation/AnimationPage";
 import { MythsAll } from "../../components/mythsAll/MythsAll";
 import { MythsRecomend } from "../../components/mythsRecomend/MythsRecomend";
-import "./mythsView.scss";
 export const MythsView = () => {
   return (
     <AnimationPage>
-      <div className="container-mythsView">
+      <div className="container-section">
         <section className="content">
           <article className="article-content">
             <div className="entry-meta-wrap">

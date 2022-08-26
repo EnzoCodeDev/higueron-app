@@ -1,29 +1,32 @@
 // navigation
 export const navigation = [
-    {
-      name: 'Inicio',
-      redirect: '/home',
-      href: 'home',
-    },
-    {
-      name: 'Mitos y leyendas',
-      redirect: '/myths',
-      href: 'myths',
-    },
-    {
-      name: 'portfolio',
-      href: 'portfolio',
-    },
-    {
-      name: 'services',
-      href: 'services',
-    },
-    {
-      name: 'testimonials',
-      href: 'testimonials',
-    },
-    {
-      name: 'contact',
-      href: 'contact',
-    },
-  ];
+  {
+    name: 'Historia',
+    href: 'historyview',
+    redirect: '/history-view'
+  },
+  {
+    name: 'Mitos y leyendas',
+    redirect: '/myths-card',
+    href: 'myths',
+  },
+  {
+    name: 'Lugares',
+    redirect: '/places-card',
+    href: 'testimonials',
+  },
+  {
+    name: 'Eventos',
+    redirect: '/event-card',
+    href: 'testimonials',
+  },
+  {
+    name: 'Personajes',
+    redirect: '/person-card',
+    href: 'services',
+  },
+  {
+    name: 'Acerca',
+    href: 'contact',
+  },
+];

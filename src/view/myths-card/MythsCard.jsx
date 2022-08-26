@@ -3,21 +3,20 @@ import { BiChevronsRight } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
 import { AnimationPage } from "../../components/animation/AnimationPage";
 import { MythsAll } from "../../components/mythsAll/MythsAll";
-import "./myths.scss";
-export const Myths = () => {
+export const MythsCard = () => {
   let navigate = useNavigate();
   return (
     <AnimationPage>
-      <div className="container-myth" id="myths">
-        <section className="sub-container-myth">
-          <article className="container-card-myth">
-            <div className="sub-container-card-myth">
-              <div className="container-image-myth">
+      <div className="container-section-card" id="myths">
+        <section className="sub-container-section-card">
+          <article className="container-card-section-card">
+            <div className="sub-container-card-section-card">
+              <div className="container-image-section-card">
                 <img src="https://th.bing.com/th/id/OIP.kpDdsGw5uwcJFOh6en0QHgHaE8?pid=ImgDet&rs=1"></img>
                 <figcaption>Just Filters</figcaption>
               </div>
-              <div className="container-info-myth">
-                <div className="sub-container-info-myth">
+              <div className="container-info-section-card">
+                <div className="sub-container-info-section-card">
                   <div className="header">
                     <span className="title">Myth</span>
                     <h2>
@@ -40,9 +39,7 @@ export const Myths = () => {
                   <div className="container-bottom-reader">
                     <button
                       className="btn-read"
-                      onClick={() => {
-                        navigate("/mythsView", { replace: true });
-                      }}
+                      onClick={() => navigate("/myths-view")}
                     >
                       {" "}
                       Read More{" "}
